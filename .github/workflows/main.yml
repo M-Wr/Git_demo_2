@@ -1,0 +1,12 @@
+name: Git Actions Demo2
+
+on: [push]
+
+jobs:
+  actions_demo:
+    runs-on: ubuntu-latest  
+    steps:
+    - run: clone https://github.com/M-Wr/Git_demo_2
+    - run: chmod +x cool_script.sh # Granting permission access to our script
+    - run: ./script.sh
+    - run: ./script.py
