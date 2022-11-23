@@ -10,5 +10,5 @@ jobs:
     - run: git clone https://github.com/M-Wr/Git_demo_2
     - run: chmod +x Script.sh 
     - run: chmod +x script.py 
-    - run: ./script.sh
+    - run: ./Script.sh
     - run: ./script.py
