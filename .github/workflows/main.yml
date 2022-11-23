@@ -14,7 +14,7 @@ jobs:
     - run: chmod +x Script.sh 
     - run: chmod +x script.py 
     - run: ./Script.sh
-    - run: ./script.py
+    - run: python script.py
   
   env_vars_job:
     runs-on: ubuntu-latest
