@@ -2,6 +2,9 @@ name: Git Actions Demo2
 
 on: [push]
 
+env:
+  app_name: app.exe
+  
 jobs:
   actions_demo:
     runs-on: ubuntu-latest  
@@ -12,3 +15,11 @@ jobs:
     - run: chmod +x script.py 
     - run: ./Script.sh
     - run: ./script.py
+  
+  env_vars_job:
+    runs-on: ubuntu-latest
+    env:
+      name: Tony
+    steps:
+    - run: echo $app_name
+    - run: echo ${{secrets.SECRET_PASSWORD}}
